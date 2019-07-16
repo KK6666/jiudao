@@ -1,0 +1,11 @@
+/* components/tag/index.wxss */
+
+.container{
+  height:52rpx;
+  border-radius:26rpx;
+  background:#f7f7f7;
+  font-size:24rpx;
+  line-height:52rpx;
+  padding:0 32rpx;
+  color:#666666;
+}

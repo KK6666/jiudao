@@ -1,0 +1,7 @@
+<!--components/tag/index.wxml-->
+<view bind:tap="onContent" class="container tag-class">
+  <text>{{text}}</text>
+  <!-- 插槽 -->
+  <slot name="after"></slot>
+</view>
+

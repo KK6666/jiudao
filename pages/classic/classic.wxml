@@ -1,0 +1,20 @@
+
+<!-- 这里将从服务器请求返回的classicData的对应数据赋值给like，count，数据通过组件的属性传递给<v-like>组件内部中去，由组件呈现数据 -->
+<view class="container">
+  <view class='header'>
+    <v-epsoide class='epsoide' index="{{classicData.index}}" />
+    <v-like class='like' bind:likeEvent="onLike" like="{{likeStatus}}" count="{{likeCount}}" />
+  </view>
+  <!-- 因为movie，music，essay组件可能会需要经常切换，使用hidden属性，但这里的组件为自定义组件，hidden无法直接使用，这里通过在movie原始组件的view上绑定hidden来控制隐藏 -->
+  <v-movie hiddenProperty="{{classicData.type != 100}}" img="{{classicData.image}}" content="{{classicData.content}}" />
+  <v-essay hiddenProperty="{{classicData.type != 300}}" img="{{classicData.image}}" content="{{classicData.content}}" />
+  <v-music 
+    BAMTitle="{{classicData.title}}"
+    BAMSrc="{{classicData.url}}" 
+    wx:if="{{classicData.type == 200}}" 
+    img="{{classicData.image}}" 
+    content="{{classicData.content}}" 
+  />
+  <v-nav bind:prev="onPrev" bind:next="onNext" class="nav" title="{{classicData.title}}" latest="{{latest}}" first="{{first}}" />
+</view>
+

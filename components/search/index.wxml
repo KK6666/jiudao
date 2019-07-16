@@ -1,0 +1,24 @@
+<!--components/search/index.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="box">
+      <image src="../../images/icon/search.png" />
+      <input bind:confirm="onConfirm" placeholder="书籍名" focus="true"/>
+    </view>
+    <view class="cancel" bind:tap="onCancel">取消</view>
+  
+  </view>
+  <view class="hh-container">
+    <view class="history">
+      <view class="title">历史搜索</view>
+      <block wx:for="{{historyWords}}">
+        <v-tag text="{{item}}" />
+      </block>
+    </view>
+    <view class="hot">
+      <view class="title">热门搜索</view>
+    </view>
+  </view>
+</view>
+
+

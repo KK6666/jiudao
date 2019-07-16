@@ -1,0 +1,5 @@
+/* page里可以写全局样式，只能继承font，color，其他的写了也不能继承 。其他全局要继承可以写在pege外*/
+page{
+  font-size:32rpx;
+  font-family:'PingFangSC-Thin';
+}

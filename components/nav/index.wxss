@@ -1,0 +1,20 @@
+/* components/classic/nav/index.wxss */
+
+.container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:588rpx;
+  height:80rpx;
+  background:#f7f7f7;
+}
+
+image{
+  width:80rpx;
+  height:80rpx;
+} 
+
+text{
+  font-size:24rpx;
+  line-height:80rpx;
+}

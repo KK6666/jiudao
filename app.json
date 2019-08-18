@@ -3,12 +3,14 @@
     "pages/classic/classic",
     "pages/my/my",
     "pages/book/book",
-    "pages/book-detail/book-detail"
+    "pages/book-detail/book-detail",
+    "pages/classic-detail/classic-detail"
   ],
+  "requiredBackgroundModes": ["audio"],
   "sitemapLocation": "sitemap.json",
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTitleText": "KK666",
+    "navigationBarTitleText": "KK旧岛",
     "navigationBarTextStyle": "black",
     "navigationStyle": "default"
   },
